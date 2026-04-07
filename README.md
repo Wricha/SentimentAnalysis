@@ -1,10 +1,10 @@
-# 🎬 IMDB Sentiment Analysis
+# IMDB Sentiment Analysis
 
 A machine learning project to classify IMDB movie reviews as **positive** or **negative** using Natural Language Processing (NLP) techniques.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 sentiment-analysis/
@@ -23,7 +23,7 @@ sentiment-analysis/
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Source:** [IMDB Dataset on Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 - **Size:** 50,000 movie reviews
@@ -32,7 +32,7 @@ sentiment-analysis/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 pip install pandas numpy scikit-learn nltk matplotlib seaborn wordcloud beautifulsoup4
@@ -50,7 +50,7 @@ nltk.download('punkt')
 
 ---
 
-## 🔄 Pipeline
+## Pipeline
 
 ### 1. Preprocessing
 
@@ -114,7 +114,7 @@ svm = LinearSVC()
 
 ---
 
-## 📈 Results
+## Results
 
 | Model | Accuracy | F1 Score |
 |-------|----------|----------|
@@ -122,7 +122,7 @@ svm = LinearSVC()
 | SVM | 87.97% | 0.88 |
 | Naive Bayes | 85.57% | 0.86 |
 
-> ✅ **Best Model: Logistic Regression** with 88.88% accuracy and balanced precision/recall across both classes.
+> **Best Model: Logistic Regression** with 88.88% accuracy and balanced precision/recall across both classes.
 
 ### Classification Report (Logistic Regression)
 
@@ -139,7 +139,7 @@ weighted avg       0.89      0.89      0.89     10000
 
 ---
 
-## 💾 Save & Load Model
+## Save & Load Model
 
 ### Save
 
@@ -184,28 +184,15 @@ def predict_sentiment(review):
 predict_sentiment("This movie was absolutely amazing!")
 predict_sentiment("Terrible acting and a boring plot. Waste of time.")
 ```
-
 ---
-
-## ☁️ Word Cloud
-
-Distinctive words visualized per sentiment class using differential word frequency:
-
-- **Positive reviews:** words like `brilliant`, `wonderful`, `beautiful`, `love`, `excellent`
-- **Negative reviews:** words like `bad`, `boring`, `awful`, `terrible`, `worst`, `waste`
-
----
-
-## 🔮 Future Improvements
+## Future Improvements
 
 - Fine-tune **BERT** for higher accuracy (target: 93%+)
 - Build a **Streamlit web app** for live predictions
-- Add **aspect-based sentiment analysis** (acting, plot, direction)
-- Experiment with **LSTM / GRU** deep learning models
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python 3**
 - **Pandas** — data manipulation
@@ -214,8 +201,3 @@ Distinctive words visualized per sentiment class using differential word frequen
 - **Matplotlib / Seaborn** — visualization
 - **WordCloud** — word cloud generation
 
----
-
-## 📜 License
-
-This project is for educational purposes.
